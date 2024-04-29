@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/fbRoot"
     android:layout_width="match_parent"
@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:gravity="center_vertical">
 
-            <com.andrognito.flashbar.view.FbProgress
+            <com.ms8.flashbar.view.FbProgress
                 android:id="@+id/fbLeftProgress"
                 style="@style/FbCircularIndeterminateProgressStyle"
                 android:layout_width="@dimen/fb_progress_size"
@@ -73,7 +73,7 @@
 
             </LinearLayout>
 
-            <com.andrognito.flashbar.view.FbButton
+            <com.ms8.flashbar.view.FbButton
                 android:id="@+id/fbPrimaryAction"
                 style="@style/FbButtonStyle"
                 android:layout_width="wrap_content"
@@ -83,7 +83,7 @@
                 tools:text="CLICK"
                 tools:visibility="visible" />
 
-            <com.andrognito.flashbar.view.FbProgress
+            <com.ms8.flashbar.view.FbProgress
                 android:id="@+id/fbRightProgress"
                 style="@style/FbCircularIndeterminateProgressStyle"
                 android:layout_width="@dimen/fb_progress_size"
@@ -103,7 +103,7 @@
             android:gravity="end"
             android:visibility="gone">
 
-            <com.andrognito.flashbar.view.FbButton
+            <com.ms8.flashbar.view.FbButton
                 android:id="@+id/fbPositiveAction"
                 style="@style/FbButtonStyle"
                 android:layout_width="wrap_content"
@@ -113,7 +113,7 @@
                 tools:text="OK"
                 tools:visibility="gone" />
 
-            <com.andrognito.flashbar.view.FbButton
+            <com.ms8.flashbar.view.FbButton
                 android:id="@+id/fbNegativeAction"
                 style="@style/FbButtonStyle"
                 android:layout_width="wrap_content"
@@ -129,4 +129,4 @@
 
     </LinearLayout>
 
-</LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
