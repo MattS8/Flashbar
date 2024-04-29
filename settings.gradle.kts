@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Flashbar"
 include(":app")
- 
+include(":Flashbar")
