@@ -1,6 +1,6 @@
 
 # Flashbar
-A highly customizable, powerful and easy-to-use alerting library for Android.
+A highly customizable, powerful and easy-to-use alerting library for Android. This is a fork with the aim to bring it up-to-date with current support libraries and dependencies for Android. The original project can be found [here](https://github.com/aritraroy/Flashbar).
 
 ### Specs
 [![API](https://img.shields.io/badge/API-24%2B-orange.svg?style=flat)](https://android-arsenal.com/api?level=14) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![Android Weekly](https://img.shields.io/badge/Android%20Weekly-%23308-blue.svg)](http://androidweekly.net/issues/issue-308) [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Flashbar-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/6933)
@@ -13,53 +13,52 @@ It has been written **100% in Kotlin**. ❤️
 ![](/raw/banner.png)
 
 # Table of Contents
-* [Download](#download)
-* [Sample Project](#sample-project)
-* [Usage](#usage)
-    * [Basics](#basics)
-    * [Gravity](#gravity)
-    * [Title](#title)
-    * [Message](#message)
-    * [Background & Overlay](#background-overlay)
-      * [Background](#background)
-      * [Overlay](#overlay)
-    * [Actions](#actions)
-      * [Primary](#primary)
-      * [Positive/Negative](#positivenegative)
-    * [Icon & Progress](#icon-progress)
-      * [Icon](#icon)
-      * [Progress](#progress)
-    * [Animations](#animations)
-      * [Enter/Exit](#enterexit)
-      * [Icon](#icon)
-    * [Event Listeners](#event-listeners)
-      * [Show](#show)
-      * [Dismiss](#dismiss)
-      * [Taps](#taps)
-    * [Miscellaneous](#miscellaneous)
-      * [Swipe-to-dismiss](#swipe-to-dismiss)
-      * [Shadow](#shadow)
-      * [Vibration](#vibration)
-* [Roadmap](#roadmap)
-* [Contribution](#contribution)
-* [License](#license)
+- [Download](#download)
+- [Sample Project](#sample-project)
+- [Usage](#usage)
+   * [Basics](#basics)
+   * [Gravity](#gravity)
+   * [Title](#title)
+   * [Message](#message)
+   * [Background & Overlay](#background--overlay)
+   * [Actions](#actions)
+      + [Primary](#primary)
+      + [Positive/Negative](#positivenegative)
+   * [Icon & Progress](#icon--progress)
+      + [Icon](#icon)
+      + [Progress](#progress)
+   * [Animations](#animations)
+      + [Enter/Exit](#enterexit)
+      + [Icon](#icon-1)
+   * [Event Listeners](#event-listeners)
+      + [Show](#show)
+      + [Dismiss](#dismiss)
+      + [Taps](#taps)
+   * [Miscellaneous](#miscellaneous)
+      + [Swipe-to-dismiss](#swipe-to-dismiss)
+      + [Shadow](#shadow)
+      + [Vibration](#vibration)
+- [Contribution](#contribution)
+- [About The Author](#about-the-author)
+      + [Aritra Roy](#aritra-roy)
+- [License](#license)
 
 ### Spread Some :heart:
 [![GitHub followers](https://img.shields.io/github/followers/aritraroy.svg?style=social&label=Follow)](https://github.com/aritraroy)  [![Twitter Follow](https://img.shields.io/twitter/follow/aritraroy.svg?style=social)](https://twitter.com/aritraroy) 
 
 # Download
 
-This library is available in **jCenter** which is the default Maven repository used in Android Studio. You can also import this library from source as a module.
+This library is currently only available via **jitpack.io** which is the simplest way to integrate this plugin into your Android Studio project. You can also import this library from source as a module.
  
 ```groovy
 dependencies {
     // other dependencies here
-    implementation 'com.andrognito.flashbar:flashbar:{latest_version}'
+    implementation("com.github.MattS8:Flashbar:{latest_version}")
 }
 ```
 
 # Sample Project
-We have an exhaustive sample project demonstrating almost every feature of the library in both languages - Java & Kotlin.
+There is an exhaustive sample project demonstrating almost every feature of the library in both languages - Java & Kotlin.
 
 Checkout the Java samples [here](https://github.com/aritraroy/Flashbar/blob/develop/app/src/main/java/com/andrognito/flashbardemo/JavaSampleActivity.java) and the Kotlin samples [here](https://github.com/aritraroy/Flashbar/blob/develop/app/src/main/java/com/andrognito/flashbardemo/KotlinSampleActivity.kt).
 
@@ -555,14 +554,6 @@ Flashbar.Builder(this)
         .vibrateOn(Flashbar.Vibration.SHOW, Flashbar.Vibration.DISMISS)
         .build()
 ```
-
-# Roadmap
-These are some of the prioritized features in the pipeline awaiting to be implemented in the near future - 
-
-- [ ] Add coordinator layout support
-- [ ] Add flashbar manager for queue management
-- [ ] Add custom layout inflation support
-- [ ] Improve shadow rendering
 
 # Contribution
 
