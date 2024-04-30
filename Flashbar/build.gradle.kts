@@ -7,7 +7,15 @@ android {
     namespace = "com.ms8.flashbar"
     compileSdk = 34
 
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+        }
+    }
     defaultConfig {
+        aarMetadata {
+            minCompileSdk = 24
+        }
         minSdk = 24
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
