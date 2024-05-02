@@ -128,8 +128,8 @@ internal class FlashbarContainerView(context: Context)
         when (navigationBarPosition) {
             LEFT -> flashbarContainerViewLp.leftMargin = navigationBarSize
             RIGHT -> flashbarContainerViewLp.rightMargin = navigationBarSize
-            BOTTOM -> flashbarContainerViewLp.bottomMargin = navigationBarSize
-            TOP -> flashbarContainerViewLp.topMargin = 0
+            BOTTOM -> flashbarContainerViewLp.bottomMargin = 0
+            TOP -> flashbarContainerViewLp.topMargin = navigationBarSize
         }
 
         layoutParams = flashbarContainerViewLp

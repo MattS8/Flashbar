@@ -12,6 +12,7 @@ import android.os.Build.VERSION_CODES.M
 import android.text.Spanned
 import android.text.TextUtils
 import android.util.TypedValue
+import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.view.ViewGroup.LayoutParams.MATCH_PARENT
 import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
@@ -80,8 +81,9 @@ internal class FlashbarView(context: Context) : LinearLayout(context) {
         if (castShadow && gravity == BOTTOM) {
             castShadow(ShadowView.ShadowType.TOP, shadowStrength)
         }
-        
-        binding = FlashBarViewBinding.bind(inflate(context, R.layout.flash_bar_view, this))
+
+        binding = FlashBarViewBinding.inflate(LayoutInflater.from(context), this, true)
+//        binding = FlashBarViewBinding.bind(inflate(context, R.layout.flash_bar_view, this))
         
         // If the bar appears with the top, then the shadow needs to added to the bottom of it,
         // Thus, after the inflation of the bar
